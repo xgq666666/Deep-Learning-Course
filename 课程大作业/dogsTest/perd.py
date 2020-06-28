@@ -40,10 +40,10 @@ def predDog():
 
     i = tf.argmax(preds, 1).numpy()[0]
 
-    dir_path = './images'
+    # dir_path = './images'
 
     # print(i)
-    dir_path = "./images"
+    dir_path = "./Annotation"
     f_l = [fn2 for fn2 in os.listdir(dir_path)]
 
     s = stringE(f_l[i])
